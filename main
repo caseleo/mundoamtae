@@ -1,0 +1,19 @@
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'es_MX'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00D8V000000jL3G',
+				'Amtae_web_chat',
+				'https://mundoamtae.my.site.com/ESWAmtaewebchat1742567979849',
+				{
+					scrt2URL: 'https://mundoamtae.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://mundoamtae.my.site.com/ESWAmtaewebchat1742567979849/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
